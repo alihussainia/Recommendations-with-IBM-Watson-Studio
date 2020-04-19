@@ -1,50 +1,25 @@
-# Project: Recommendation Engine using IBM Watson
+# Recommendations Engines with IBM
+This project was designed to analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles.
 
-## Project Introduction
+##  Installations
+This project requires Python 3.x and the following Python libraries installed:
+- [Nltk](https://www.nltk.org/)
+- [Pandas](http://pandas.pydata.org)
+- [Progressbar](https://pypi.org/project/progressbar/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
 
-For this project I will analyze the interactions that users have with articles
-on the **IBM Watson Studio platform,** and make recommendations to them about
-new articles they might like.
+## Summary:
+The project contains the following tasks:
+- Exploratory Data Analysis: This part is for data exploration.
+- Rank Based Recommendations: To get started in building recommendations, I first find the most popular articles based on the most interactions. These are then the articles we might recommend to new users (or anyone depending on what we know about them).
+- User-User Based Collaborative Filtering: In order to build better recommendations for the users of IBM's platform, I look at users that are similar in terms of the items they have interacted with. These items could then be recommended to similar users.
+- Content Based Recommendations:  Using  NLP skills, I developed a content-based recommendation system.
+- Matrix Factorization: Finally, I completed a machine learning approach to building recommendations. Using the user-item interactions, I built out a matrix decomposition. Using the decomposition, I got an idea of how well I can predict new articles an individual might interact with .    
 
-In order to determine which articles to show to each user, I will be performing a study of the data available on the IBM Watson Studio platform.
+## Data
+- user-item-interactions.csv: file contains user interaction.
+- articles_community.csv: file contains articles description.  
 
-## Exploratory Data Analysis
-
-Most of the users have maximum 3 interactions with any article on the platform and this distribution is highly **skewed** because interactions are less.
-
-## Rank Based Recommendations
-
-This type of recommendation system provide the top articles view in this
-dataset.
-
-We can set how many recommendations to provide.
-
-## User-user Based Collaborative Filtering
-
-We provide a `user_id` for which we want recommendations. Then we sort each user
-based on similarity with the given `user_id`.
-
-For each sorted user, we find the articles this sorted user has interacted with
-to add to recommedations list.
-
-Then we select the top m recommendations, m being the number of recommendations
-to provide for a specific `user_id`.
-
-## Matrix Factorisation
-
-In this section we first perform SVD on the user_item interactions matrix. We
-then see the behaviour of accuracy with the number of latent features. Since the
-data is highly imbalanced, we also check the variation of F1 score with the
-number of latent features. F1 score increases upto a limit and then drops
-asymptotically.
-
-We have a highly imbalanced data set because of less interactions on the platform.
-
-
-## Conclusion
-
-There were only 20 customer for which we can try and provide recommendation. If
-we had more data then performance of our recommendation engine could be
-evaluated more efficiently. We have a highly imbalanced data because of many
-zeroes in the user-item interaction matrix. I will try **content recommendation** in
-future iteractions to tackle the **cold start problem**.
+## Acknowledgments
+I would like to thank [Udacity](https://eu.udacity.com/) for this amazing project, and [IBM](https://dataplatform.cloud.ibm.com/) for providing the data.
