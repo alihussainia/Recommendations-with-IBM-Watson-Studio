@@ -1,4 +1,4 @@
-# Recommendations-with-IBM
+# Building a Recommendation Engine using IBM Watson Studio platform
 
 
 ## Installations required
