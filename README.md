@@ -4,7 +4,7 @@
    ---------------------------------------------------
   Building an Article Recommendation Engine using IBM Watson Studio platform.
 </pre>
-   <img loading="lazy" src="https://img.shields.io/badge/course-passed-green" alt="course passed">
+   <img loading="lazy" src="https://img.shields.io/badge/project%20status-completed-green" alt="project status">
     
 <hr></hr>
 </div>
