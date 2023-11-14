@@ -1,24 +1,70 @@
-# Building a Recommendation Engine using IBM Watson Studio platform
+<div align="center">
+<pre>
+   <h1>Recommendations with IBM Watson Studio</h1>
+   ---------------------------------------------------
+  Building an Article Recommendation Engine using IBM Watson Studio platform.
+</pre>
+   <img loading="lazy" src="https://img.shields.io/badge/course-passed-green" alt="course passed">
+    
+<hr></hr>
+</div>
+
+The project involves analyses of the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles we think they will like.
+
+## Blog
+Read detailed step by step blog on the project <a href="https://medium.com/@alihussainia1/building-recommendation-engine-71f30d21c936">here.</a>
+
+## Directory Structure
+```tree
+.
+├── data
+│   ├── articles_community.csv - articles available on the IBM platform
+│   └── user-item-interactions.csv - list of articles that users interact with
+├── recommendation.html - Jupyter notebook in html format
+├── README.md - documentation for the project
+└── recommendation.ipynb - Jupyter Notebook for project
+```
+
+## Tasks
+The project is divided into the following tasks:
 
 
-## Installations required
-This project requires Python 3.x and the following Python libraries installed:
+1. **Exploratory Data Analysis**
 
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org/)
-- [matplotlib](https://matplotlib.org/)
+   <code>Perform exploratory data analysis to understand the recommendation system data.</code>
 
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
+2. **Rank Based Recommendations**
 
+   <code>Recommend the most popular articles based on number of user interactions.</code>
 
-## Run
+3. **User-User Based Collaborative Filtering**
 
-In a terminal or command window, navigate to the top-level project directory ```Recommendations-with-IBM/```  (that contains this README) and run one of the following commands:
+   <code>Recommend articles to users based on similarity with other users' interactions.</code>
 
-```ipython notebook Recommendations_with_IBM.ipynb```
+4. **Content Based Recommendations** (optional)
 
-or
+   <code>Build content-based recommendations using NLP on article text (optional).</code>
 
-```jupyter notebook Recommendations_with_IBM.ipynb```
+5. **Matrix Factorization**
 
-This will open the iPython Notebook software and project file in your browser.
+   <code>Apply matrix factorization techniques to predict articles users may interact with.</code>
+
+## Tools Used
+```
+- pandas
+- numpy
+- matplotlib
+- pickle
+```
+
+## Instructions
+In a terminal or command window, navigate to the current project directory ```Recommendations-with-IBM/```  and run the following command:
+
+```bash
+jupyter notebook recommendation.ipynb
+```
+
+This will open the Jupyter Notebook in your local browser.
+
+## Udacity Data Scientist Nanodegree Certificate
+<img src="https://github.com/alihussainia/Project_RS/blob/e7b63e8d6189982e9b9d1e100b9f21b2d82d3329/DataScientistNanoDegree.png" alt="datascientistnanodegree"/>
